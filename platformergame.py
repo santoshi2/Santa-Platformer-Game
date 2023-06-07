@@ -204,7 +204,11 @@ while True:
                 yjumpdestination=y
                 ytarget=yjumpdestination-400
                 jump=1
-                jumpcounter=jumpcounter+1                
+                jumpcounter=jumpcounter+1
+
+            if event.key==pygame.K_BACKSPACE:
+                pygame.quit()
+                exit()             
         if event.type==pygame.KEYUP:
             jumpcounter=0
             idlebooright=True
